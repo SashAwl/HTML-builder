@@ -2,9 +2,9 @@ const fs = require('fs');
 const fsp = fs.promises;
 const path = require('path');
 
-getBundle();
+mergeStyles();
 
-async function getBundle() {
+async function mergeStyles() {
   try {
     const styleList = [];
     const dirPath = path.join(__dirname, 'styles');
